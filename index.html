@@ -71,6 +71,128 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2023-02-16-Thur-WorkReport" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/16/2023-02-16-Thur-WorkReport/" class="article-date">
+  <time class="dt-published" datetime="2023-02-16T13:16:31.000Z" itemprop="datePublished">2023-02-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/16/2023-02-16-Thur-WorkReport/">2023/02/16 Thur. WorkReport</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="opamp-DC-sim"><a href="#opamp-DC-sim" class="headerlink" title="opamp DC sim"></a>opamp DC sim</h2><ul>
+<li>输入范围仿真</li>
+<li>输出范围仿真</li>
+</ul>
+<h2 id="opamp-AC-sim"><a href="#opamp-AC-sim" class="headerlink" title="opamp AC sim"></a>opamp AC sim</h2><ul>
+<li><p>输入差模电平方向与PhaseMargin(VF(&#x2F;net01))结果处理</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>acm</strong></th>
+<th align="center"><strong>inn</strong></th>
+<th align="center"><strong>inp</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>-1</strong></td>
+<td align="center">PM</td>
+<td align="center">PM+180°</td>
+</tr>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center">PM+180°</td>
+<td align="center">PM</td>
+</tr>
+</tbody></table>
+<p>  解释：<br>  输入差模电平（acm&#x3D;1）加在反向端时，PhaseMargin(VF(&#x2F;net01))得到的结果需要加180°；<br>  加在同向端时，PhaseMargin(VF(&#x2F;net01))得到的结果不需要加180°。<br>  输入差模电平（acm&#x3D;-1）加在反向端时，PhaseMargin(VF(&#x2F;net01))得到的结果不需要加180°。</p>
+</li>
+<li><p>运放的负载电容：考虑输出结点与地之间的所有电容</p>
+</li>
+</ul>
+<h2 id="ocean-sim"><a href="#ocean-sim" class="headerlink" title="ocean sim"></a>ocean sim</h2><ol>
+<li>Launch→ADE XL</li>
+<li>Data View→检查Tests中是否为正确文件</li>
+<li>Data View→Corners→Open Corners Setup</li>
+<li>Corners Setup→Model Files→Click to add→Import from tests→OK</li>
+<li>Corners Setup→工具栏Add new corner（新添加一列）</li>
+<li>Corners Setup→Temperature→添加温度</li>
+<li>Corners Setup→Design Variables→添加电源波动（因此在搭建仿真平台时，最好将avdd、dvdd设置为变量）</li>
+<li>Corners Setup→Model Files→添加所用到元件的工艺角</li>
+<li>Start sim</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/16/2023-02-16-Thur-WorkReport/" data-id="cle74oa7d0001bcv0d0t06zos" data-title="2023/02/16 Thur. WorkReport" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-2023-02-15-Wed-WorkReport" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/16/2023-02-15-Wed-WorkReport/" class="article-date">
+  <time class="dt-published" datetime="2023-02-16T13:02:05.000Z" itemprop="datePublished">2023-02-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/16/2023-02-15-Wed-WorkReport/">2023/02/15 Wed. WorkReport</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Cadence-Virtuoso仿真Tips"><a href="#Cadence-Virtuoso仿真Tips" class="headerlink" title="Cadence Virtuoso仿真Tips"></a>Cadence Virtuoso仿真Tips</h2><ul>
+<li>选中导线，左下角Property Editor可更改导线类型：narrow or wide</li>
+<li>电流输出与电压输出同样，都可以接断路（noConn）。报错是因为电流输出一般不是1位，需要并联多个noConn</li>
+<li>虚拟机状态栏选中某一窗口（例如Virtuoso主界面和Cadence Library Manager），选中Always on Visible Workspace，即可实现转移工作区时窗口跟随转移</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/16/2023-02-15-Wed-WorkReport/" data-id="cle74oa6v0000bcv0adbicn2i" data-title="2023/02/15 Wed. WorkReport" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2023-02-14-Tue-WorkReport" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/02/14/2023-02-14-Tue-WorkReport/" class="article-date">
@@ -235,6 +357,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/02/16/2023-02-16-Thur-WorkReport/">2023/02/16 Thur. WorkReport</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/16/2023-02-15-Wed-WorkReport/">2023/02/15 Wed. WorkReport</a>
+          </li>
         
           <li>
             <a href="/2023/02/14/2023-02-14-Tue-WorkReport/">2023/02/14 Tue. WorkReport</a>
